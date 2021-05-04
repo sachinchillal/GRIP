@@ -1,0 +1,176 @@
+body {
+  background-color: #555;
+  background-color: #def;
+  background-color: #eee;
+}
+section {
+  min-height: calc(100vh - 100px);
+}
+h1 span {
+  color: #e00;
+}
+h1 {
+  float: left;
+  background-color: #123456;
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: 3em;
+  color: #333;
+  color: gold;
+  border-radius: 20px;
+  margin: 8px 16px;
+}
+.navBar {
+  float: right;
+  display: inline-block;
+  text-align: right;
+}
+.makeSpace {
+  clear: both;
+}
+.btnBack {
+  float: right;
+  display: block;
+  margin-top: 50px;
+  margin-right: 10px;
+  border: 1px solid coral;
+  border-radius: 5px;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+.btnBack:hover {
+  background-color: #fff;
+}
+
+table, .fullSize {
+  margin: 8px;
+  width: calc(100% - 16px);
+}
+tr th {
+  color: #933;
+  padding: 4px 8px;
+}
+tr td {
+  color: #123;
+  font-weight: bold;
+  padding: 2px 8px;
+  text-align: center;
+}
+.actions a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 16px;
+  border: 1px solid gold;
+}
+#iDeposit {
+  color: brown;
+  background-color: #00f500;
+}
+#iDebit {
+  color: white;
+  background-color: #f50000;
+}
+#iDeposit:hover, #iDebit:hover {
+  background-color: #456;
+  color: white;
+}
+.link {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #895;
+  color: gold;
+  padding: 8px 16px;
+  margin: 4px 8px;
+  border: 1px solid #456;
+}
+.link:hover {
+  background-color: #456;
+  color: gold;
+  border: 1px solid #895;
+}
+.currentAcc {
+  color: #444;
+}
+.info {
+  width: 30em;
+  background-color: #fdb147;
+  box-shadow: 3px 3px 6px #555;
+}
+.info caption {
+  background-color: #c98932;
+  font-size: 1.5em;
+  color: white;
+  padding: 10px;
+  box-shadow: 3px 3px 6px #555;
+  margin-bottom: 4px;
+}
+.info td {
+  padding: 20px;
+}
+td label {
+  display: block;
+}
+td span, span select, .fontt {
+  font-size: 20px;
+  color: #456132;
+}
+td {
+  padding: 20px;
+}
+.warning {
+  padding: 20px 120px;
+  background-color: gold;
+  border: 1px solid red;
+  outline: 1px solid pink;
+  border-left: 5px solid red;
+  color: red;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.notify {
+  padding: 20px 120px;
+  background-color: green;
+  border: 1px solid #f7e077;
+  border-left: 5px solid coral;
+  color: gold;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.rightContent {
+  text-align: right;
+}
+table {
+  border-collapse: collapse;
+}
+.history {
+  margin-top: 30px;
+  width: 60em;
+  box-shadow: 3px 3px 6px #555;
+}
+.history caption {
+  box-shadow: 3px 3px 6px #555;
+  margin-bottom: 4px;
+  font-size: 24px;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .charts {
+    flex-direction: column;
+    margin: 30px;
+    margin-bottom: 100px;
+  }
+  .navBar {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    clear: both;
+  }
+  .navBar a {
+    float: left;
+    margin: auto;
+  }
+}
