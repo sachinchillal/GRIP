@@ -67,7 +67,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2"> <a href="transaction.php?accNo=<?php echo $row['accNo']; ?>&action=transfer" class="link">Transfer Amount</a> </td>
+            <td colspan="2"> <a href="transaction.php?accNo=<?php echo $row['accNo']; ?>&action=transfer" class="link" title="Transfer amount from this account">Transfer Amount</a> </td>
           </tr>
         </table>
         <?php

@@ -49,7 +49,7 @@
           $result = mysqli_query($conn, "SELECT * FROM bankcustomer");
           while($row = mysqli_fetch_array($result)) {
         ?>
-        <tr onclick="location.href='accinformation.php?accNo=<?php echo $row['accNo']; ?>'">
+        <tr onclick="location.href='accinformation.php?accNo=<?php echo $row['accNo']; ?>'" title="View account details">
           <td><?php echo $row['sno']; ?></td>
           <td><?php echo $row['accNo']; ?></td>
           <td><?php echo $row['accHolder']; ?></td>
@@ -64,8 +64,8 @@
           <td class="rightContent"><script type="text/javascript"> document.write(new Intl.NumberFormat('en-IN', { style: "currency", currency: "INR" }).format(<?php echo $row['curBal']; ?>));</script></td>
           <td class="rightContent"><script type="text/javascript"> document.write(new Intl.NumberFormat('en-IN', { style: "currency", currency: "INR" }).format(<?php echo $row['loan']; ?>));</script></td>
           <td class="actions">
-            <a href="transaction.php?accNo=<?php echo $row['accNo'];?>&action=deposit" id="iDeposit">Deposit</a>
-            <a href="transaction.php?accNo=<?php echo $row['accNo'];?>&action=debit" id="iDebit">Debit</a>
+            <a href="transaction.php?accNo=<?php echo $row['accNo'];?>&action=deposit" id="iDeposit" title="Deposit to this account">Deposit</a>
+            <a href="transaction.php?accNo=<?php echo $row['accNo'];?>&action=debit" id="iDebit" title="Debit from this account">Debit</a>
           </td>
         </tr>
         <?php } ?>
